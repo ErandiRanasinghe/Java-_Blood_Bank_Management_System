@@ -381,7 +381,7 @@ public class UserReg extends JFrame {
 		 Boolean status = false;
 		 try { 
 			 Class.forName("com.mysql.jdbc.Driver"); 
-			 connect =(Connection) DriverManager.getConnection("" + "jdbc:mysql://localhost/bbms" + "?user=root&password="); 
+			 connect =(Connection) DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/bbms" + "?user=root&password="); 
 			 s = connect.createStatement();
 			 
 			// SQL Insert

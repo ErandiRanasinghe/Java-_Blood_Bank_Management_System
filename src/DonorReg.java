@@ -493,7 +493,7 @@ public class DonorReg extends JFrame {
 				 Boolean status = false;
 				 try { 
 					 Class.forName("com.mysql.jdbc.Driver"); 
-					 connect =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 connect =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 					 s = connect.createStatement();
 					 
 					 String sql = "INSERT INTO donor " + "(Name,DonorID,PhoneNo1,PhoneNo2,Address,Email,NIC,DOB,Age,Weight,Diaseases,Gender,BloodGroup) " + "VALUES ('"+ lblDonorname + "','" + lblDonorid	+ "','"+ lblPhoneNo + "','" + lblLandNo+ "','" + lblAddress + "','" + lblemail + "','" + lblNic + "','" + lblDOB + "','" + lblAge  + "','" + lblweight  + "','" + lblDeasese   + "','" + lblGender    + "','" + lblBloodGroup  + "') "; 

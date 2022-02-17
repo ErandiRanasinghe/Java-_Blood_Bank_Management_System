@@ -74,7 +74,7 @@ public class BloodStock extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 				
 						String query = "SELECT COUNT(*) FROM bloodunit WHERE BloodGroup = 'A+'";
 						pst=(PreparedStatement) conn.prepareStatement(query);
@@ -91,7 +91,7 @@ public class BloodStock extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 				
 						String query = "SELECT COUNT(*) FROM bloodunit WHERE BloodGroup = 'A-'";
 						pst=(PreparedStatement) conn.prepareStatement(query);
@@ -109,7 +109,7 @@ public class BloodStock extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 				
 						String query = "SELECT COUNT(*) FROM bloodunit WHERE BloodGroup = 'AB+'";
 						pst=(PreparedStatement) conn.prepareStatement(query);
@@ -128,7 +128,7 @@ public class BloodStock extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 				
 						String query = "SELECT COUNT(*) FROM bloodunit WHERE BloodGroup = 'AB-'";
 						pst=(PreparedStatement) conn.prepareStatement(query);
@@ -145,7 +145,7 @@ public class BloodStock extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 				
 						String query = "SELECT COUNT(*) FROM bloodunit WHERE BloodGroup = 'B+'";
 						pst=(PreparedStatement) conn.prepareStatement(query);
@@ -162,7 +162,7 @@ public class BloodStock extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 				
 						String query = "SELECT COUNT(*) FROM bloodunit WHERE BloodGroup = 'B-'";
 						pst=(PreparedStatement) conn.prepareStatement(query);
@@ -180,7 +180,7 @@ public class BloodStock extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 				
 						String query = "SELECT COUNT(*) FROM bloodunit WHERE BloodGroup = 'O+'";
 						pst=(PreparedStatement) conn.prepareStatement(query);
@@ -197,7 +197,7 @@ public class BloodStock extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 				
 						String query = "SELECT COUNT(*) FROM bloodunit WHERE BloodGroup = 'O-'";
 						pst=(PreparedStatement) conn.prepareStatement(query);

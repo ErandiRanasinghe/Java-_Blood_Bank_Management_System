@@ -211,7 +211,7 @@ public class CollectBlood extends JFrame {
 				 try { 
 					 
 					 Class.forName("com.mysql.jdbc.Driver"); 
-					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 					 s = conn.createStatement();
 					 
 					 String sql = "INSERT INTO bloodunit " + "(DonorID,DonorName,BloodGroup,Unit,CollectingDate,ExpireDate) " + "VALUES ('"+ lblDonorId + "','" + lblusername+ "','"+ lblBloodGroup + "','" + lblUnit+ "','" + lblCollectDate + "','" + lblExpireDate + "') "; 
@@ -251,6 +251,7 @@ public class CollectBlood extends JFrame {
 		contentPane.add(lblUnit);
 		
 		textField = new JTextField("1");
+		textField.setEditable(false);
 		textField.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		textField.setColumns(10);
 		textField.setBounds(353, 331, 266, 48);

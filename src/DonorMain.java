@@ -64,7 +64,7 @@ public class DonorMain extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 				
 						String query = "SELECT * FROM donor";
 						pst=(PreparedStatement) conn.prepareStatement(query);

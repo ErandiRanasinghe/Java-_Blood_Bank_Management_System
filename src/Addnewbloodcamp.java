@@ -129,7 +129,7 @@ public class Addnewbloodcamp extends JFrame {
 				 try { 
 					 
 					 Class.forName("com.mysql.jdbc.Driver"); 
-					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 					 s = conn.createStatement();
 					 
 					 String sql = "INSERT INTO bloodcamp " + "(Date,EventName,Vanue) " + "VALUES ('"+ lblDate+ "','" + lbleventname+ "','"+ lblVanue + "') "; 

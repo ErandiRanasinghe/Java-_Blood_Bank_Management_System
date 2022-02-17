@@ -41,7 +41,7 @@ public void dropdown() {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver"); 
-			 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+			 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 			String sql="SELECT * FROM bloodunit";
 			PreparedStatement pst=(PreparedStatement) conn.prepareStatement(sql);
 			ResultSet set = pst.executeQuery();

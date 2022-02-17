@@ -7,7 +7,7 @@ public class testload
   {
     try 
   {
-      String url = "jdbc:mysql://localhost:3306/test?autoReconnect=true&useSSL=false";
+      String url = "jdbc:mysql://localhost:3308/test?autoReconnect=true&useSSL=false";
       String user = "root";
       String password = "";
     

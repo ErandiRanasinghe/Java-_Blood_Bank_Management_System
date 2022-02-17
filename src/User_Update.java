@@ -66,7 +66,7 @@ public void dropdown() {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver"); 
-			 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+			 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 			String sql="SELECT * FROM user";
 			PreparedStatement pst=(PreparedStatement) conn.prepareStatement(sql);
 			ResultSet set = pst.executeQuery();
@@ -214,7 +214,7 @@ public void dropdown() {
 	 
 	 try { 
 		 Class.forName("com.mysql.jdbc.Driver"); 
-		 conn =(Connection) DriverManager.getConnection("" + "jdbc:mysql://localhost/bbms" + "?user=root&password="); 
+		 conn =(Connection) DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/bbms" + "?user=root&password="); 
 		 s = conn.createStatement();
 		 
 		// SQL Insert
@@ -283,7 +283,7 @@ public void dropdown() {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 					String sql="select * from user where UserID=? ";
 					PreparedStatement pst=(PreparedStatement) conn.prepareStatement(sql);
 					pst.setString(1, (String)comboBoxuserID.getSelectedItem() );
@@ -377,7 +377,7 @@ public void dropdown() {
 		 
 		 try { 
 			 Class.forName("com.mysql.jdbc.Driver"); 
-			 conn =(Connection) DriverManager.getConnection("" + "jdbc:mysql://localhost/bbms" + "?user=root&password="); 
+			 conn =(Connection) DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/bbms" + "?user=root&password="); 
 			 s = conn.createStatement();
 			 
 			// SQL Insert

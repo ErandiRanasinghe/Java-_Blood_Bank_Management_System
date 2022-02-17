@@ -188,7 +188,7 @@ public class Login extends JFrame {
 				userRole = comboBoxlog.getSelectedItem().toString();
 				try{
 					String query = "SELECT * FROM `login` WHERE UserID=? and Password=? and UserType=?";
-					con = DriverManager.getConnection("jdbc:mysql://localhost/BBMS", "root", "");
+					con = DriverManager.getConnection("jdbc:mysql://localhost:3308/BBMS", "root", "");
 					pst=(PreparedStatement) con.prepareStatement(query);
 					pst.setString(1, textFieldUserID.getText());
 					pst.setString(2, textFieldPassword.getText());

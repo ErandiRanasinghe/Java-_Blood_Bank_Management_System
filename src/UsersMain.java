@@ -7,6 +7,7 @@ import javax.swing.border.EmptyBorder;
 
 import com.mysql.jdbc.PreparedStatement;
 
+
 import net.proteanit.sql.DbUtils;
 
 import javax.swing.JTable;
@@ -61,7 +62,7 @@ public class UsersMain extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost/BBMS" + "?user=root&password="); 
+					 conn =DriverManager.getConnection("" + "jdbc:mysql://localhost:3308/BBMS" + "?user=root&password="); 
 				
 						String query = "SELECT * FROM user";
 						pst=(PreparedStatement) conn.prepareStatement(query);
